@@ -1,6 +1,15 @@
+// module.exports = ({ env }) => ({
+//   auth: {
+//     secret: env("ADMIN_JWT_SECRET"),
+//   },
+//   apiToken: {
+//     salt: env("API_TOKEN_SALT"),
+//   },
+// });
+
 module.exports = ({ env }) => ({
   apiToken: {
-    salt: env('API_TOKEN_SALT', 'HELLOWMYSELFADMINVANSH1316'),
+    salt: env("API_TOKEN_SALT", "HELLOWMYSELFADMINVANSH1316"),
   },
   auth: {
     events: {
@@ -12,21 +21,21 @@ module.exports = ({ env }) => ({
       },
     },
     options: {
-      expiresIn: '7d',
+      expiresIn: "7d",
     },
-    secret: env('ADMIN_JWT_SECRET', 'HELLOWTHISADMINSTRAPI1316'),
+    secret: env("ADMIN_JWT_SECRET", "HELLOWTHISADMINSTRAPI1316"),
   },
-  url: env('PUBLIC_ADMIN_URL', '/dashboard'),
+  url: env("PUBLIC_ADMIN_URL", "/dashboard"),
   autoOpen: false,
   watchIgnoreFiles: [
-    './my-custom-folder', // Folder
-    './scripts/someScript.sh', // File
+    "./my-custom-folder", // Folder
+    "./scripts/someScript.sh", // File
   ],
-  host: 'localhost', // Only used for --watch-admin
+  host: "localhost", // Only used for --watch-admin
   port: 8003, // Only used for --watch-admin
-  serveAdminPanel: env.bool('SERVE_ADMIN', true),
+  serveAdminPanel: env.bool("SERVE_ADMIN", true),
   forgotPassword: {
-    from: 'no-reply@example.com',
-    replyTo: 'no-reply@example.com',
+    from: "no-reply@example.com",
+    replyTo: "no-reply@example.com",
   },
 });
