@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_pages_pages",
+  "info": {
+    "displayName": "Pages"
+  },
+  "options": {},
+  "attributes": {
+    "ServiceComponent": {
+      "displayName": "Services",
+      "type": "component",
+      "repeatable": true,
+      "component": "services.services"
+    }
+  }
+}
