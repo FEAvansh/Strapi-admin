@@ -1,9 +1,20 @@
-const crypto = require('crypto');
+// const crypto = require('crypto');
+
+// module.exports = ({ env }) => ({
+//   'users-permissions': {
+//     config: {
+//       jwtSecret: env('JWT_SECRET') || crypto.randomBytes(16).toString('base64'),
+//     },
+//   },
+// });
 
 module.exports = ({ env }) => ({
-  'users-permissions': {
+  "users-permissions": {
     config: {
-      jwtSecret: env('JWT_SECRET') || crypto.randomBytes(16).toString('base64'),
+      jwtSecret: env("JWT_SECRET"),
+      jwt: {
+        expiresIn: "30d",
+      },
     },
   },
 });
@@ -12,11 +23,11 @@ module.exports = ({ env }) => ({
   // ...
   upload: {
     config: {
-      provider: 'cloudinary',
+      provider: "cloudinary",
       providerOptions: {
-        cloud_name: env('CLOUDINARY_NAME'),
-        api_key: env('CLOUDINARY_KEY'),
-        api_secret: env('CLOUDINARY_SECRET'),
+        cloud_name: env("CLOUDINARY_NAME"),
+        api_key: env("CLOUDINARY_KEY"),
+        api_secret: env("CLOUDINARY_SECRET"),
       },
       actionOptions: {
         upload: {},
