@@ -1,20 +1,9 @@
-// const crypto = require('crypto');
-
-// module.exports = ({ env }) => ({
-//   'users-permissions': {
-//     config: {
-//       jwtSecret: env('JWT_SECRET') || crypto.randomBytes(16).toString('base64'),
-//     },
-//   },
-// });
+const crypto = require("crypto");
 
 module.exports = ({ env }) => ({
   "users-permissions": {
     config: {
-      jwtSecret: env("JWT_SECRET"),
-      jwt: {
-        expiresIn: "30d",
-      },
+      jwtSecret: env("JWT_SECRET") || crypto.randomBytes(16).toString("base64"),
     },
   },
 });
