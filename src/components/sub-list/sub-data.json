@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sub_list_sub_data",
+  "info": {
+    "displayName": "subData",
+    "icon": "clipboard-list"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

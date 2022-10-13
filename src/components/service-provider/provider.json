@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_service_provider_providers",
+  "info": {
+    "displayName": "Provider",
+    "icon": "truck-loading",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "SubFields": {
+      "displayName": "subData",
+      "type": "component",
+      "repeatable": true,
+      "component": "sub-list.sub-data"
+    }
+  }
+}
