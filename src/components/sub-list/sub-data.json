@@ -2,27 +2,22 @@
   "collectionName": "components_sub_list_sub_data",
   "info": {
     "displayName": "subData",
-    "icon": "clipboard-list",
-    "description": ""
+    "icon": "clipboard-list"
   },
   "options": {},
   "attributes": {
     "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     },
     "name": {
       "type": "string"
-    },
-    "subDescription": {
-      "type": "text"
     }
   }
 }
