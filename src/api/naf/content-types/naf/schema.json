@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nafs",
+  "info": {
+    "singularName": "naf",
+    "pluralName": "nafs",
+    "displayName": "Naf",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "estimate": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "address": {
+      "type": "json"
+    },
+    "year": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "color": {
+      "type": "string"
+    },
+    "additionals": {
+      "type": "json"
+    },
+    "dynamic": {
+      "type": "dynamiczone",
+      "components": [
+        "pages.pages"
+      ]
+    },
+    "Socials": {
+      "type": "dynamiczone",
+      "components": [
+        "pages.pages"
+      ]
+    }
+  }
+}

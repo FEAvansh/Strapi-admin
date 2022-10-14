@@ -14,7 +14,7 @@
   "attributes": {
     "title": {
       "type": "richtext",
-      "required": true
+      "required": false
     },
     "Dynamic": {
       "type": "dynamiczone",
@@ -22,6 +22,19 @@
         "service-provider.provider",
         "sub-list.sub-data"
       ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "backgroundImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
